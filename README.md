@@ -2,8 +2,10 @@
 
 1. Create a new Porjet(MVC)
 2. Create a new Folder (name will be DBContext)
- 2.1---- Create a new class that will perform main work and name will be xxxxDBContext.cs
- 2.2---- Create a new  class that will type of all data. let name is MyDataType.cs
+
+2.1---- Create a new class that will perform main work and name will be xxxxDBContext.cs
+ 
+2.2---- Create a new  class that will type of all data. let name is MyDataType.cs
 
 
 3. #### Entity framework install. these are tools,  core, sql-server
@@ -11,18 +13,27 @@
 4. SQL server apps open and make a server and connect
 
 ***** initial kaj korlam, erpor code likhte hobe******
+
 5. ebar MyDataType a type gula declare kore dibo
 
 using System.ComponentModel.DataAnnotations;
+
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SecondPractice.DBContext
+
 {
+
     public class MyDataTypesAre
+    
     {
+    
         [Key]
+        
         public int ID { get; set; }
+        
         [Column(TypeName = "varchar(200)")]
+        
         public string District { get; set; }
 
         [Column(TypeName = "varchar(200)")]
