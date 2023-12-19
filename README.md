@@ -42,17 +42,22 @@ namespace SecondPractice.DBContext
 }
 
 6.  xxxxDBContext.cs this code wil update by some changes. this are
+7.  
     6.1 ----xxxxDBContext eta DbContext ke herit korbe, tokhoni entity package using akare likhte hobe. ba auto fix korleo chole asbe.
+    
     6.2-----constractor create korte hobe, ja ekta value return korbe.
+    
                 public MulKajDBContext(DbContextOptions options) : base(options){ }
-                public DbSet<MyDataTypesAre>elomelo { get; set; }
-7. add this to appsetting
+    
+                public DbSet"<MyDataTypesAre>"elomelo { get; set; }
+    
+9. add this to appsetting
   "ConnectionStrings": {
     "fuzzy": "Server=DESKTOP-AOOCBQV;Database=myIdentity;Trusted_Connection=True; TrustServerCertificate=True"
   }
 } 
 
-8. add this to program.cs
+10. add this to program.cs
 builder.Services.AddDbContext<MulKajDBContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("fuzzy")));
 using gula thikthak kore ase ki dekhte hobe
