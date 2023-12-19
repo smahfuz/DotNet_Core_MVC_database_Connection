@@ -52,12 +52,13 @@ namespace SecondPractice.DBContext
                 public DbSet<MyDataTypesAre>elomelo { get; set; }
     
 9. add this to appsetting
+
                  "ConnectionStrings": {
                    "fuzzy": "Server=DESKTOP-AOOCBQV;Database=myIdentity;Trusted_Connection=True; TrustServerCertificate=True"
                  }
                } 
 
-10. add this to program.cs
+11. add this to program.cs
 
 builder.Services.AddDbContext<MulKajDBContext>(options =>
 
