@@ -59,10 +59,10 @@ namespace SecondPractice.DBContext
                } 
 
 11. add this to program.cs
-
-builder.Services.AddDbContext<MulKajDBContext>(options =>
-
-options.UseSqlServer(builder.Configuration.GetConnectionString("fuzzy")));
+              
+              builder.Services.AddDbContext<MulKajDBContext>(options =>
+              
+              options.UseSqlServer(builder.Configuration.GetConnectionString("fuzzy")));
 
 using gula thikthak kore ase ki dekhte hobe
 
