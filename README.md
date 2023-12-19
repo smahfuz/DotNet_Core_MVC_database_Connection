@@ -49,21 +49,25 @@ namespace SecondPractice.DBContext
     
                 public MulKajDBContext(DbContextOptions options) : base(options){ }
     
-                public DbSet"<MyDataTypesAre>"elomelo { get; set; }
+                public DbSet<MyDataTypesAre>elomelo { get; set; }
     
 9. add this to appsetting
-  "ConnectionStrings": {
-    "fuzzy": "Server=DESKTOP-AOOCBQV;Database=myIdentity;Trusted_Connection=True; TrustServerCertificate=True"
-  }
-} 
+                 "ConnectionStrings": {
+                   "fuzzy": "Server=DESKTOP-AOOCBQV;Database=myIdentity;Trusted_Connection=True; TrustServerCertificate=True"
+                 }
+               } 
 
 10. add this to program.cs
+
 builder.Services.AddDbContext<MulKajDBContext>(options =>
+
 options.UseSqlServer(builder.Configuration.GetConnectionString("fuzzy")));
+
 using gula thikthak kore ase ki dekhte hobe
 
 
 Add-Migration "FirstMigration"
+
 update-database
 
 ####  hoye jaoyar kotha
